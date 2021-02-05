@@ -33,6 +33,10 @@ class SecondPage extends StatelessWidget {
 
                 //getx 히스토리 없애고 홈으로 이동
                 Get.offAll(Home());
+
+                // 히스토리 없애는게 아니라 이동하는 거라서 back할 수 있음.
+                // 히스토리를 없애는 것 ==> 이전으로 돌아갈 수 없는 페이지로 만듦
+                //Get.to(Home());
               },
             )
           ],
