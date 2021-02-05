@@ -4,6 +4,7 @@ import 'package:flutter_getx/src/pages/named/first.dart';
 import 'package:flutter_getx/src/pages/named/second.dart';
 import 'package:flutter_getx/src/pages/next.dart';
 import 'package:flutter_getx/src/pages/normal/first.dart';
+import 'package:flutter_getx/src/pages/user.dart';
 import 'package:get/get.dart';
 
 void main() => runApp(MyApp());
@@ -44,6 +45,11 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: "/next",
           page: () => NextPage(),
+          transition: Transition.fade,
+        ),
+        GetPage(
+          name: "/user/:uid",
+          page: () => UserPage(),
           transition: Transition.fade,
         ),
       ],

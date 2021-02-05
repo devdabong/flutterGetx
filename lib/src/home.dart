@@ -53,6 +53,12 @@ class Home extends StatelessWidget {
                 //Get.to(FirstPage(), arguments: "다봉");
               },
             ),
+            ElevatedButton(
+              child: Text("동적 URL 라우트"),
+              onPressed: () {
+                Get.toNamed("/user/2354?name=dabong&age=28");
+              },
+            ),
           ],
         ),
       ),
